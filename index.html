@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="ad.size" content="width=300,height=250" />
+    <link rel="stylesheet" href="normalize.css" />
+    <style>
+      html {
+        --ad-container-width: 300px;
+        --ad-container-height: 250px;
+      }
+      .ad-container {
+        position: absolute;
+        width: var(--ad-container-width);
+        height: var(--ad-container-height);
+        border: 1px solid black;
+        box-sizing: border-box;
+        background: #eee;
+        overflow: hidden;
+        cursor: pointer;
+      }
+      .ad-container.init-hidden {
+        visibility: hidden;
+      }
+      :focus {
+        outline: none;
+      }
+      ::-moz-focus-inner {
+        border: 0;
+      }
+    </style>
+    <script src="https://s0.2mdn.net/ads/studio/Enabler.js"></script>
+    <script src="https://s0.2mdn.net/ads/studio/cached_libs/gsap_3.11.5_min.js"></script>
+    <!-- ANY ADDITIONAL DEPENDENCIES GO HERE -->
+    <!-- ... -->
+    <script>
+      const devDynamicContent = {};
+      devDynamicContent.creative_feed = [{}];
+      devDynamicContent.creative_feed[0].data_url = 'template.json';
+      devDynamicContent.creative_feed[0].exit_url = 'https://www.adylic.com/';
+      Enabler.setDevDynamicContent(devDynamicContent);
+    </script>
+    <title>Animorca Export Shell</title>
+  </head>
+  <body>
+    <div class="ad-container init-hidden"></div>
+    <script src="logic.js"></script>
+  </body>
+</html>
