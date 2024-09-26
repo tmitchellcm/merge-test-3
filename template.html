@@ -1,0 +1,1562 @@
+<head>
+  <style>
+    @font-face {
+      font-family: '"Avenir';
+      src: url('"Avenir-Next",-sans-serif.woff2') format('woff2');
+      font-weight: 400;
+      font-style: normal;
+      font-display: swap;
+    }
+    @font-face {
+      font-family: '"Gotham';
+      src: url('"Gotham-Rounded",-sans-serif.woff2') format('woff2');
+      font-weight: 400;
+      font-style: normal;
+      font-display: swap;
+    }
+    .f1-300x250 {
+      background-color: transparent;
+      box-sizing: content-box;
+      border: none;
+      display: block;
+      height: 250px;
+      left: 0px;
+      overflow: hidden;
+      top: 0px;
+      width: 300px;
+      position: absolute;
+    }
+    .gradient-background {
+      background-image: url(../assets/b146c70f16a06b5d92126e4ea221a8690c9489af.png);
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      box-sizing: content-box;
+      border: none;
+      display: block;
+      height: 270px;
+      left: 0px;
+      overflow: visible;
+      top: 0px;
+      width: 300px;
+      position: absolute;
+    }
+    .f1-container {
+      background-color: transparent;
+      box-sizing: content-box;
+      border: none;
+      display: block;
+      height: 250px;
+      left: 0px;
+      overflow: visible;
+      top: 0px;
+      width: 300px;
+      position: absolute;
+    }
+    .f1-flexible-container {
+      background-color: transparent;
+      box-sizing: content-box;
+      border: none;
+      display: flex;
+      height: 250px;
+      left: 0px;
+      overflow: visible;
+      top: 0px;
+      width: 300px;
+      position: absolute;
+      align-items: undefined;
+      justify-content: undefined;
+      align-self: auto;
+      min-width: 300px;
+      max-width: 300px;
+      min-height: 250px;
+      max-height: 250px;
+      flex-direction: column;
+    }
+    .f1-top-container {
+      background-color: transparent;
+      box-sizing: content-box;
+      border: none;
+      display: flex;
+      height: 58px;
+      left: 0px;
+      overflow: visible;
+      top: 0px;
+      width: 300px;
+      position: static;
+      align-items: center;
+      justify-content: undefined;
+      align-self: stretch;
+      min-width: 300px;
+      max-width: 300px;
+      min-height: 58px;
+      max-height: 58px;
+      flex-direction: column;
+      padding-top: 12px;
+    }
+    .f1-bottom-container {
+      background-color: transparent;
+      box-sizing: content-box;
+      border: none;
+      display: flex;
+      height: 192px;
+      left: 0px;
+      overflow: visible;
+      top: 58px;
+      width: 300px;
+      position: static;
+      align-items: center;
+      justify-content: center;
+      align-self: stretch;
+      min-width: 300px;
+      max-width: 300px;
+      min-height: 192px;
+      max-height: 192px;
+      flex-direction: row;
+    }
+    .f1-left-container {
+      background-color: transparent;
+      box-sizing: content-box;
+      border: none;
+      display: flex;
+      height: auto;
+      left: 0px;
+      overflow: visible;
+      top: 0px;
+      width: 139px;
+      position: static;
+      align-items: center;
+      justify-content: center;
+      align-self: stretch;
+      min-width: 139px;
+      max-width: 139px;
+      row-gap: 12px;
+      flex: 1 1 139px;
+      flex-direction: column;
+      padding-left: 19px;
+    }
+    .heading-f1-wrapper {
+      background-color: transparent;
+      box-sizing: content-box;
+      border: none;
+      display: flex;
+      height: auto;
+      left: 19px;
+      overflow: visible;
+      top: 60px;
+      width: 120px;
+      position: static;
+      align-items: center;
+      justify-content: center;
+      align-self: auto;
+      min-width: 120px;
+      max-width: 120px;
+      column-gap: 10px;
+      flex-direction: row;
+    }
+    .heading-f1 {
+      color: rgba(255, 255, 255, 1);
+      font-family: 'Avenir Next', sans-serif;
+      font-size: 24px;
+      font-weight: 900;
+      height: auto;
+      left: auto;
+      letter-spacing: 0px;
+      line-height: 1;
+      position: static;
+      text-align: left;
+      top: auto;
+      vertical-align: middle;
+      width: auto;
+    }
+    .f1-right-container {
+      background-color: transparent;
+      box-sizing: content-box;
+      border: none;
+      display: flex;
+      height: auto;
+      left: 139px;
+      overflow: visible;
+      top: 13px;
+      width: 161px;
+      position: static;
+      align-items: center;
+      justify-content: undefined;
+      align-self: auto;
+      min-width: 161px;
+      max-width: 161px;
+      flex-direction: row;
+    }
+    .f2-container {
+      background-color: transparent;
+      box-sizing: content-box;
+      border: none;
+      display: block;
+      height: 250px;
+      left: 0px;
+      overflow: visible;
+      top: 0px;
+      width: 300px;
+      position: absolute;
+    }
+    .f2-flexible-container {
+      background-color: transparent;
+      box-sizing: content-box;
+      border: none;
+      display: flex;
+      height: 250px;
+      left: 0px;
+      overflow: visible;
+      top: 0px;
+      width: 300px;
+      position: absolute;
+      align-items: center;
+      justify-content: center;
+      align-self: auto;
+      min-width: 300px;
+      max-width: 300px;
+      min-height: 250px;
+      max-height: 250px;
+      flex-direction: column;
+      padding-bottom: 15px;
+      padding-top: 10px;
+      padding-left: 15px;
+      padding-right: 15px;
+    }
+    .f2-top-container {
+      background-color: transparent;
+      box-sizing: content-box;
+      border: none;
+      display: flex;
+      height: auto;
+      left: 15px;
+      overflow: visible;
+      top: 10px;
+      width: 270px;
+      position: static;
+      align-items: center;
+      justify-content: undefined;
+      align-self: stretch;
+      min-width: 270px;
+      max-width: 270px;
+      flex-direction: column;
+    }
+    .logo {
+      background-image: url(../assets/9ea5c9a9413069137b8616bf4e3b5a9a959bdde9.png);
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      box-sizing: content-box;
+      border: none;
+      display: flex;
+      height: 46px;
+      left: 83px;
+      overflow: visible;
+      top: 0px;
+      width: 105px;
+      position: static;
+      align-items: center;
+      justify-content: undefined;
+      align-self: auto;
+      min-width: 105px;
+      max-width: 105px;
+      min-height: 46px;
+      max-height: 46px;
+      flex-direction: column;
+    }
+    .f2-bottom-container {
+      background-color: transparent;
+      box-sizing: content-box;
+      border: none;
+      display: flex;
+      height: 179px;
+      left: 15px;
+      overflow: visible;
+      top: 56px;
+      width: auto;
+      position: static;
+      align-items: undefined;
+      justify-content: center;
+      align-self: stretch;
+      min-height: 179px;
+      max-height: 179px;
+      flex: 1 1 270px;
+      flex-direction: row;
+    }
+    .f2-left-container {
+      background-color: transparent;
+      box-sizing: content-box;
+      border: none;
+      display: flex;
+      height: auto;
+      left: 0px;
+      overflow: visible;
+      top: 0px;
+      width: 135px;
+      position: static;
+      align-items: center;
+      justify-content: undefined;
+      align-self: auto;
+      min-width: 135px;
+      max-width: 135px;
+      row-gap: 12px;
+      flex: 1 1 135px;
+      flex-direction: column;
+      padding-top: 25px;
+    }
+    .icon {
+      background-image: url(../assets/10f3a2ca426e1d6fc0d33066ffa6b82272a5bc26.png);
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      box-sizing: content-box;
+      border: none;
+      display: flex;
+      height: 50px;
+      left: 43px;
+      overflow: visible;
+      top: 25px;
+      width: 50px;
+      position: static;
+      align-items: center;
+      justify-content: undefined;
+      align-self: auto;
+      min-width: 50px;
+      max-width: 50px;
+      min-height: 50px;
+      max-height: 50px;
+      column-gap: 10px;
+      flex-direction: row;
+    }
+    .heading-f2-wrapper {
+      background-color: transparent;
+      box-sizing: content-box;
+      border: none;
+      display: flex;
+      height: auto;
+      left: 0px;
+      overflow: visible;
+      top: 87px;
+      width: 135px;
+      position: static;
+      align-items: center;
+      justify-content: center;
+      align-self: stretch;
+      min-width: 135px;
+      max-width: 135px;
+      flex-direction: row;
+    }
+    .heading-f2 {
+      color: rgba(255, 255, 255, 1);
+      font-family: 'Avenir Next', sans-serif;
+      font-size: 14px;
+      font-weight: 400;
+      height: auto;
+      left: auto;
+      letter-spacing: 0px;
+      line-height: 1.04;
+      position: static;
+      text-align: center;
+      top: auto;
+      vertical-align: middle;
+      width: auto;
+    }
+    .f2-right-container {
+      background-color: transparent;
+      box-sizing: content-box;
+      border: none;
+      display: flex;
+      height: 179px;
+      left: 135px;
+      overflow: visible;
+      top: 0px;
+      width: auto;
+      position: static;
+      align-items: undefined;
+      justify-content: center;
+      align-self: stretch;
+      min-height: 179px;
+      max-height: 179px;
+      flex: 1 1 135px;
+      flex-direction: row;
+    }
+    .animal-image {
+      background-image: url(../assets/2eb9db6e8b9330d3c2a4f62155bf7e7737fec83d.png);
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      box-sizing: content-box;
+      border: none;
+      display: flex;
+      height: 179px;
+      left: 0px;
+      overflow: visible;
+      top: 0px;
+      width: auto;
+      position: static;
+      align-items: center;
+      justify-content: undefined;
+      align-self: stretch;
+      min-height: 179px;
+      max-height: 179px;
+      flex: 1 1 135px;
+      flex-direction: row;
+    }
+    .f3-container {
+      background-color: transparent;
+      box-sizing: content-box;
+      border: none;
+      display: block;
+      height: 250px;
+      left: 0px;
+      overflow: visible;
+      top: 0px;
+      width: 300px;
+      position: absolute;
+    }
+    .f3-flexible-container {
+      background-color: transparent;
+      box-sizing: content-box;
+      border: none;
+      display: flex;
+      height: 250px;
+      left: 0px;
+      overflow: visible;
+      top: 0px;
+      width: 300px;
+      position: absolute;
+      align-items: center;
+      justify-content: undefined;
+      align-self: auto;
+      min-width: 300px;
+      max-width: 300px;
+      min-height: 250px;
+      max-height: 250px;
+      flex-direction: column;
+    }
+    .f3-top-container {
+      background-color: transparent;
+      box-sizing: content-box;
+      border: none;
+      display: flex;
+      height: 220px;
+      left: 0px;
+      overflow: visible;
+      top: 0px;
+      width: auto;
+      position: static;
+      align-items: undefined;
+      justify-content: center;
+      align-self: stretch;
+      min-height: 220px;
+      max-height: 220px;
+      flex: 1 1 300px;
+      flex-direction: row;
+    }
+    .f3-left-container {
+      background-color: transparent;
+      box-sizing: content-box;
+      border: none;
+      display: flex;
+      height: 220px;
+      left: 0px;
+      overflow: visible;
+      top: 0px;
+      width: auto;
+      position: static;
+      align-items: center;
+      justify-content: center;
+      align-self: stretch;
+      min-height: 220px;
+      max-height: 220px;
+      flex: 1 1 150px;
+      flex-direction: row;
+    }
+    .product-image-f3-wrapper {
+      background-color: transparent;
+      box-sizing: content-box;
+      border: none;
+      display: flex;
+      height: 220px;
+      left: -20px;
+      overflow: visible;
+      top: 0px;
+      width: 190px;
+      position: static;
+      align-items: center;
+      justify-content: center;
+      align-self: stretch;
+      min-width: 190px;
+      max-width: 190px;
+      min-height: 220px;
+      max-height: 220px;
+      flex-direction: row;
+    }
+    .product-image-f3 {
+      background-image: url(../assets/a94a26227a9e7c8bab2dd28a27737499cec1c1c6.png);
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      box-sizing: content-box;
+      border: none;
+      display: flex;
+      height: 220px;
+      left: 0px;
+      overflow: visible;
+      top: 0px;
+      width: auto;
+      position: static;
+      align-items: center;
+      justify-content: center;
+      align-self: stretch;
+      min-height: 220px;
+      max-height: 220px;
+      flex: 1 1 190px;
+      flex-direction: row;
+    }
+    .f3-right-container {
+      background-color: transparent;
+      box-sizing: content-box;
+      border: none;
+      display: flex;
+      height: auto;
+      left: 150px;
+      overflow: visible;
+      top: 0px;
+      width: 150px;
+      position: static;
+      align-items: center;
+      justify-content: center;
+      align-self: stretch;
+      min-width: 150px;
+      max-width: 150px;
+      row-gap: 27.5px;
+      flex: 1 1 150px;
+      flex-direction: column;
+    }
+    .logo {
+      background-image: url(../assets/9ea5c9a9413069137b8616bf4e3b5a9a959bdde9.png);
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      box-sizing: content-box;
+      border: none;
+      display: flex;
+      height: 49px;
+      left: 19px;
+      overflow: visible;
+      top: 55px;
+      width: 112px;
+      position: static;
+      align-items: center;
+      justify-content: undefined;
+      align-self: auto;
+      min-width: 112px;
+      max-width: 112px;
+      min-height: 49px;
+      max-height: 49px;
+      flex-direction: column;
+    }
+    .f3-cta-flexible-wrapper {
+      background-color: transparent;
+      box-sizing: content-box;
+      border: none;
+      display: flex;
+      height: 34px;
+      left: 0px;
+      overflow: visible;
+      top: 131px;
+      width: 150px;
+      position: static;
+      align-items: center;
+      justify-content: center;
+      align-self: auto;
+      min-width: 150px;
+      max-width: 150px;
+      min-height: 34px;
+      max-height: 34px;
+      flex-direction: column;
+    }
+    .f3-cta-button {
+      background-color: rgba(255, 255, 255, 1);
+      box-sizing: content-box;
+      border: none;
+      border-radius: 17.15673828125px;
+      display: flex;
+      height: auto;
+      left: 26px;
+      overflow: hidden;
+      top: 0px;
+      width: auto;
+      position: static;
+      align-items: center;
+      justify-content: center;
+      align-self: auto;
+      column-gap: 0.458736389875412px;
+      flex-direction: row;
+      padding-bottom: 10.275694847106934px;
+      padding-top: 10.275694847106934px;
+      padding-left: 15.413541793823242px;
+      padding-right: 15.413541793823242px;
+    }
+    .f3-cta-copy {
+      color: rgba(0, 142, 1, 1);
+      font-family: 'Gotham Rounded', sans-serif;
+      font-size: 13.055520057678223px;
+      font-weight: 400;
+      height: auto;
+      left: auto;
+      letter-spacing: 0px;
+      line-height: 1;
+      position: static;
+      text-align: center;
+      top: auto;
+      vertical-align: middle;
+      width: auto;
+    }
+    .f3-bottom-container {
+      background-color: transparent;
+      box-sizing: content-box;
+      border: none;
+      display: flex;
+      height: 30px;
+      left: 0px;
+      overflow: visible;
+      top: 220px;
+      width: 300px;
+      position: static;
+      align-items: center;
+      justify-content: center;
+      align-self: stretch;
+      min-width: 300px;
+      max-width: 300px;
+      min-height: 30px;
+      max-height: 30px;
+      column-gap: 10px;
+      flex-direction: row;
+      padding-bottom: 12px;
+      padding-left: 21px;
+      padding-right: 21px;
+    }
+    .disclaimer-text {
+      color: rgba(255, 255, 255, 1);
+      font-family: 'Avenir Next', sans-serif;
+      font-size: 7px;
+      font-weight: 500;
+      height: auto;
+      left: auto;
+      letter-spacing: 0px;
+      line-height: 1;
+      position: static;
+      text-align: center;
+      top: auto;
+      vertical-align: middle;
+      width: auto;
+    }
+  </style>
+</head>
+<body>
+  <div class="f1-300x250">
+    <div class="gradient-background"></div>
+    <div class="f1-container">
+      <div class="f1-flexible-container">
+        <div class="f1-top-container"></div>
+        <div class="f1-bottom-container">
+          <div class="f1-left-container">
+            <div class="heading-f1-wrapper">
+              <div class="heading-f1">INCIDID UNT UT LABORE</div>
+            </div>
+          </div>
+          <div class="f1-right-container"></div>
+        </div>
+      </div>
+    </div>
+    <div class="f2-container">
+      <div class="f2-flexible-container">
+        <div class="f2-top-container"><div class="logo"></div></div>
+        <div class="f2-bottom-container">
+          <div class="f2-left-container">
+            <div class="icon"></div>
+            <div class="heading-f2-wrapper">
+              <div class="heading-f2">
+                Sed do eiusmod tempor incididunt labore
+              </div>
+            </div>
+          </div>
+          <div class="f2-right-container">
+            <div class="animal-image"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="f3-container">
+      <div class="f3-flexible-container">
+        <div class="f3-top-container">
+          <div class="f3-left-container">
+            <div class="product-image-f3-wrapper">
+              <div class="product-image-f3"></div>
+            </div>
+          </div>
+          <div class="f3-right-container">
+            <div class="logo"></div>
+            <div class="f3-cta-flexible-wrapper">
+              <div class="f3-cta-button">
+                <div class="f3-cta-copy">BUY NOW</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="f3-bottom-container">
+          <div class="disclaimer-text">© 2024 Mars or Affiliates.</div>
+        </div>
+      </div>
+    </div>
+    <script>
+      document.addEventListener('templateInit', (e) => {
+        // Get creative object from shell
+        const creative = e.detail?.creative;
+        if (!creative) {
+          console.error('Creative object missing');
+        }
+
+        // Animations from Animorca
+        const timelineAnimations = [
+          {
+            className: '.heading-f1-wrapper',
+            position: 0.9,
+            type: 'custom',
+            visibility: 'hidden',
+            from: {
+              ease: 'power3',
+              height: 72,
+              id: 'Heading F1 Wrapper-01J56158V81PM2BBHH1YYN49B1',
+              opacity: 1,
+              rotation: 0,
+              scaleX: 1,
+              scaleY: 1,
+              transformOrigin: '50% 50%',
+              visibility: 'visible',
+              width: 120,
+              x: 0,
+              y: 0,
+            },
+            to: {
+              data: {
+                className: 'heading-f1-wrapper',
+                end: 1200,
+                elementName: 'Heading F1 Wrapper',
+                figmaElementId: '1:153',
+                start: 900,
+              },
+              duration: 0.3,
+              ease: 'power3',
+              height: 72,
+              id: 'Heading F1 Wrapper-01J56158V81PM2BBHH1YYN49B1',
+              opacity: 1,
+              rotation: 0,
+              scaleX: 1,
+              scaleY: 1,
+              transformOrigin: '50% 50%',
+              visibility: 'visible',
+              width: 120,
+              x: 0,
+              y: 0,
+            },
+          },
+          {
+            className: '.heading-f1-wrapper',
+            position: 0,
+            type: 'custom',
+            visibility: 'visible',
+            from: {
+              id: 'ZbSfoJMMcS',
+              duration: 0,
+              ease: 'none',
+              height: 72,
+              opacity: 0,
+              rotation: 0,
+              scaleX: 1,
+              scaleY: 1,
+              visibility: 'visible',
+              width: 120,
+              x: 0,
+              y: 0,
+              transformOrigin: '50% 50%',
+            },
+            to: {
+              id: 'ZbSfoJMMcS',
+              duration: 0.3,
+              ease: 'none',
+              height: 72,
+              opacity: 1,
+              rotation: 0,
+              scaleX: 1,
+              scaleY: 1,
+              visibility: 'visible',
+              width: 120,
+              x: 0,
+              y: 0,
+              data: {
+                className: 'heading-f1-wrapper',
+                end: 300,
+                elementName: 'Heading F1 Wrapper',
+                figmaElementId: '1:153',
+                start: 0,
+              },
+              transformOrigin: '50% 50%',
+            },
+          },
+          {
+            className: '.heading-f1-wrapper',
+            position: 1.2,
+            type: 'custom',
+            visibility: 'hidden',
+            from: {
+              ease: 'power3',
+              height: 72,
+              id: 'Heading F1 Wrapper-01J5615P1K10J1CH5V4F807JYG',
+              opacity: 1,
+              rotation: 0,
+              scaleX: 1,
+              scaleY: 1,
+              transformOrigin: '50% 50%',
+              visibility: 'visible',
+              width: 120,
+              x: 0,
+              y: 0,
+            },
+            to: {
+              data: {
+                className: 'heading-f1-wrapper',
+                end: 1500,
+                elementName: 'Heading F1 Wrapper',
+                figmaElementId: '1:153',
+                start: 1200,
+              },
+              duration: 0.3,
+              ease: 'power3',
+              height: 72,
+              id: 'Heading F1 Wrapper-01J5615P1K10J1CH5V4F807JYG',
+              opacity: 1,
+              rotation: 0,
+              scaleX: 1,
+              scaleY: 1,
+              transformOrigin: '50% 50%',
+              visibility: 'visible',
+              width: 120,
+              x: 0,
+              y: 0,
+            },
+          },
+          {
+            className: '.heading-f1-wrapper',
+            position: 1.8,
+            type: 'custom',
+            visibility: 'hidden',
+            from: {
+              ease: 'power3',
+              height: 72,
+              id: 'Heading F1 Wrapper-01J5616W2J6ZW2ZN2M74BF0J4F',
+              opacity: 1,
+              rotation: 0,
+              scaleX: 1,
+              scaleY: 1,
+              transformOrigin: '50% 50%',
+              visibility: 'visible',
+              width: 120,
+              x: 0,
+              y: 0,
+            },
+            to: {
+              data: {
+                className: 'heading-f1-wrapper',
+                end: 2100,
+                elementName: 'Heading F1 Wrapper',
+                figmaElementId: '1:153',
+                start: 1800,
+              },
+              duration: 0.3,
+              ease: 'power3',
+              height: 72,
+              id: 'Heading F1 Wrapper-01J5616W2J6ZW2ZN2M74BF0J4F',
+              opacity: 1,
+              rotation: 0,
+              scaleX: 1,
+              scaleY: 1,
+              transformOrigin: '50% 50%',
+              visibility: 'visible',
+              width: 120,
+              x: 0,
+              y: 0,
+            },
+          },
+          {
+            className: '.heading-f1-wrapper',
+            position: 0.6,
+            type: 'custom',
+            visibility: 'hidden',
+            from: {
+              ease: 'power3',
+              height: 72,
+              id: 'Heading F1 Wrapper-01J5614Z6XXTNZB7KDZJPZV4QH',
+              opacity: 1,
+              rotation: 0,
+              scaleX: 1,
+              scaleY: 1,
+              transformOrigin: '50% 50%',
+              visibility: 'visible',
+              width: 120,
+              x: 0,
+              y: 0,
+            },
+            to: {
+              data: {
+                className: 'heading-f1-wrapper',
+                end: 900,
+                elementName: 'Heading F1 Wrapper',
+                figmaElementId: '1:153',
+                start: 600,
+              },
+              duration: 0.3,
+              ease: 'power3',
+              height: 72,
+              id: 'Heading F1 Wrapper-01J5614Z6XXTNZB7KDZJPZV4QH',
+              opacity: 1,
+              rotation: 0,
+              scaleX: 1,
+              scaleY: 1,
+              transformOrigin: '50% 50%',
+              visibility: 'visible',
+              width: 120,
+              x: 0,
+              y: 0,
+            },
+          },
+          {
+            className: '.heading-f1-wrapper',
+            position: 3.7,
+            type: 'custom',
+            visibility: 'hidden',
+            from: {
+              id: 'z1w6inK_BS',
+              duration: 0,
+              ease: 'none',
+              height: 72,
+              opacity: 1,
+              rotation: 0,
+              scaleX: 1,
+              scaleY: 1,
+              visibility: 'visible',
+              width: 120,
+              x: 0,
+              y: 0,
+            },
+            to: {
+              id: 'z1w6inK_BS',
+              duration: 0.3,
+              ease: 'none',
+              height: 72,
+              opacity: 0,
+              rotation: 0,
+              scaleX: 1,
+              scaleY: 1,
+              visibility: 'visible',
+              width: 120,
+              x: 0,
+              y: 0,
+              data: {
+                className: 'heading-f1-wrapper',
+                end: 4000,
+                elementName: 'Heading F1 Wrapper',
+                figmaElementId: '1:153',
+                start: 3700,
+              },
+            },
+          },
+          {
+            className: '.heading-f1-wrapper',
+            position: 0.3,
+            type: 'custom',
+            visibility: 'hidden',
+            from: {
+              ease: 'power1',
+              height: 72,
+              id: 'Heading F1 Wrapper-01J5610YYJ88BCTFA6VW4FBS2E',
+              opacity: 1,
+              rotation: 0,
+              scaleX: 1,
+              scaleY: 1,
+              transformOrigin: '50% 50%',
+              visibility: 'visible',
+              width: 120,
+              x: 0,
+              y: 0,
+            },
+            to: {
+              data: {
+                className: 'heading-f1-wrapper',
+                end: 600,
+                elementName: 'Heading F1 Wrapper',
+                figmaElementId: '1:153',
+                start: 300,
+              },
+              duration: 0.3,
+              ease: 'power1',
+              height: 72,
+              id: 'Heading F1 Wrapper-01J5610YYJ88BCTFA6VW4FBS2E',
+              opacity: 1,
+              rotation: 0,
+              scaleX: 1,
+              scaleY: 1,
+              transformOrigin: '50% 50%',
+              visibility: 'visible',
+              width: 120,
+              x: 0,
+              y: 0,
+            },
+          },
+          {
+            className: '.heading-f1-wrapper',
+            position: 1.5,
+            type: 'custom',
+            visibility: 'hidden',
+            from: {
+              ease: 'power3',
+              height: 72,
+              id: 'Heading F1 Wrapper-01J56165ECBBWN0FN6DSMTQVTR',
+              opacity: 1,
+              rotation: 0,
+              scaleX: 1,
+              scaleY: 1,
+              transformOrigin: '50% 50%',
+              visibility: 'visible',
+              width: 120,
+              x: 0,
+              y: 0,
+            },
+            to: {
+              data: {
+                className: 'heading-f1-wrapper',
+                end: 1800,
+                elementName: 'Heading F1 Wrapper',
+                figmaElementId: '1:153',
+                start: 1500,
+              },
+              duration: 0.3,
+              ease: 'power3',
+              height: 72,
+              id: 'Heading F1 Wrapper-01J56165ECBBWN0FN6DSMTQVTR',
+              opacity: 1,
+              rotation: 0,
+              scaleX: 1,
+              scaleY: 1,
+              transformOrigin: '50% 50%',
+              visibility: 'visible',
+              width: 120,
+              x: 0,
+              y: 0,
+            },
+          },
+          {
+            className: '.heading-f1-wrapper',
+            position: 2.1,
+            type: 'custom',
+            visibility: 'hidden',
+            from: {
+              ease: 'power3',
+              height: 72,
+              id: 'Heading F1 Wrapper-01J5617AT1Q9YT36XKYY0H1011',
+              opacity: 1,
+              rotation: 0,
+              scaleX: 1,
+              scaleY: 1,
+              transformOrigin: '50% 50%',
+              visibility: 'visible',
+              width: 120,
+              x: 0,
+              y: 0,
+            },
+            to: {
+              data: {
+                className: 'heading-f1-wrapper',
+                end: 2400,
+                elementName: 'Heading F1 Wrapper',
+                figmaElementId: '1:153',
+                start: 2100,
+              },
+              duration: 0.3,
+              ease: 'power3',
+              height: 72,
+              id: 'Heading F1 Wrapper-01J5617AT1Q9YT36XKYY0H1011',
+              opacity: 1,
+              rotation: 0,
+              scaleX: 1,
+              scaleY: 1,
+              transformOrigin: '50% 50%',
+              visibility: 'visible',
+              width: 120,
+              x: 0,
+              y: 0,
+            },
+          },
+          {
+            className: '.f2-top-container',
+            position: 0,
+            type: 'custom',
+            visibility: 'visible',
+            from: {
+              id: 'n9FFASd9l6',
+              duration: 0,
+              ease: 'none',
+              height: 46,
+              opacity: 0,
+              rotation: 0,
+              scaleX: 1,
+              scaleY: 1,
+              visibility: 'visible',
+              width: 270,
+              x: 0,
+              y: 0,
+              transformOrigin: '50% 50%',
+            },
+            to: {
+              id: 'n9FFASd9l6',
+              duration: 0.001,
+              ease: 'power3',
+              height: 46,
+              opacity: 1,
+              rotation: 0,
+              scaleX: 1,
+              scaleY: 1,
+              visibility: 'visible',
+              width: 270,
+              x: 0,
+              y: 0,
+              data: {
+                className: 'f2-top-container',
+                end: 1,
+                elementName: 'F2 Top Container',
+                figmaElementId: '1:242',
+                start: 0,
+              },
+              transformOrigin: '50% 50%',
+            },
+          },
+          {
+            className: '.f2-left-container',
+            position: 4,
+            type: 'custom',
+            visibility: 'hidden',
+            from: {
+              id: 'L0oGMVVLZx',
+              duration: 0,
+              ease: 'none',
+              height: 132,
+              opacity: 0,
+              rotation: 0,
+              scaleX: 1,
+              scaleY: 1,
+              visibility: 'visible',
+              width: 135,
+              x: 0,
+              y: 0,
+              transformOrigin: '50% 50%',
+            },
+            to: {
+              id: 'L0oGMVVLZx',
+              duration: 0.3,
+              ease: 'none',
+              height: 132,
+              opacity: 1,
+              rotation: 0,
+              scaleX: 1,
+              scaleY: 1,
+              visibility: 'visible',
+              width: 135,
+              x: 0,
+              y: 0,
+              data: {
+                className: 'f2-left-container',
+                end: 4300,
+                elementName: 'F2 Left Container',
+                figmaElementId: '1:243',
+                start: 4000,
+              },
+              transformOrigin: '50% 50%',
+            },
+          },
+          {
+            className: '.f2-right-container',
+            position: 0,
+            type: 'custom',
+            visibility: 'visible',
+            from: {
+              id: 'cCaXZgq2f6',
+              duration: 0,
+              ease: 'none',
+              height: 179,
+              opacity: 0,
+              rotation: 0,
+              scaleX: 1,
+              scaleY: 1,
+              visibility: 'visible',
+              width: 135,
+              x: 0,
+              y: 0,
+              transformOrigin: '50% 50%',
+            },
+            to: {
+              id: 'cCaXZgq2f6',
+              duration: 0.001,
+              ease: 'power3',
+              height: 179,
+              opacity: 1,
+              rotation: 0,
+              scaleX: 1,
+              scaleY: 1,
+              visibility: 'visible',
+              width: 135,
+              x: 0,
+              y: 0,
+              data: {
+                className: 'f2-right-container',
+                end: 1,
+                elementName: 'F2 Right Container',
+                figmaElementId: '1:238',
+                start: 0,
+              },
+              transformOrigin: '50% 50%',
+            },
+          },
+          {
+            className: '.f3-container',
+            position: 14.999,
+            type: 'custom',
+            visibility: 'hidden',
+            from: {
+              ease: 'power3',
+              height: 250,
+              id: 'F3 Container-01J2Y5Y11EZ1BWYVRWXG9GSW3D',
+              opacity: 1,
+              rotation: 0,
+              scaleX: 1,
+              scaleY: 1,
+              transformOrigin: '50% 50%',
+              visibility: 'visible',
+              width: 300,
+              x: 0,
+              y: 0,
+            },
+            to: {
+              data: {
+                className: 'f3-container',
+                end: 15000,
+                elementName: 'F3 Container',
+                figmaElementId: '1:271',
+                start: 14999,
+              },
+              duration: 0.001,
+              ease: 'power3',
+              height: 250,
+              id: 'F3 Container-01J2Y5Y11EZ1BWYVRWXG9GSW3D',
+              opacity: 1,
+              rotation: 0,
+              scaleX: 1,
+              scaleY: 1,
+              transformOrigin: '50% 50%',
+              visibility: 'visible',
+              width: 300,
+              x: 0,
+              y: 0,
+            },
+          },
+          {
+            className: '.f3-container',
+            position: 8,
+            type: 'custom',
+            visibility: 'hidden',
+            from: {
+              id: 'lIuMhgcfdO',
+              duration: 0,
+              ease: 'none',
+              height: 250,
+              opacity: 0,
+              rotation: 0,
+              scaleX: 1,
+              scaleY: 1,
+              visibility: 'visible',
+              width: 300,
+              x: 0,
+              y: 0,
+              transformOrigin: '50% 50%',
+            },
+            to: {
+              id: 'lIuMhgcfdO',
+              duration: 0.001,
+              ease: 'power3',
+              height: 250,
+              opacity: 1,
+              rotation: 0,
+              scaleX: 1,
+              scaleY: 1,
+              visibility: 'visible',
+              width: 300,
+              x: 0,
+              y: 0,
+              data: {
+                className: 'f3-container',
+                end: 8001,
+                elementName: 'F3 Container',
+                figmaElementId: '1:271',
+                start: 8000,
+              },
+              transformOrigin: '50% 50%',
+            },
+          },
+          {
+            className: '.f3-left-container',
+            position: 8,
+            type: 'custom',
+            visibility: 'hidden',
+            from: {
+              id: 'GUXaZL38cr',
+              duration: 0,
+              ease: 'none',
+              height: 220,
+              opacity: 0,
+              rotation: 0,
+              scaleX: 1,
+              scaleY: 1,
+              visibility: 'visible',
+              width: 150,
+              x: 0,
+              y: 0,
+              transformOrigin: '50% 50%',
+            },
+            to: {
+              id: 'GUXaZL38cr',
+              duration: 0.3,
+              ease: 'none',
+              height: 220,
+              opacity: 1,
+              rotation: 0,
+              scaleX: 1,
+              scaleY: 1,
+              visibility: 'visible',
+              width: 150,
+              x: 0,
+              y: 0,
+              data: {
+                className: 'f3-left-container',
+                end: 8300,
+                elementName: 'F3 Left Container',
+                figmaElementId: '1:258',
+                start: 8000,
+              },
+              transformOrigin: '50% 50%',
+            },
+          },
+          {
+            className: '.f3-right-container',
+            position: 9,
+            type: 'custom',
+            visibility: 'hidden',
+            from: {
+              id: 'LNBjhv8Hif',
+              duration: 0,
+              ease: 'none',
+              height: 220,
+              opacity: 0,
+              rotation: 0,
+              scaleX: 1,
+              scaleY: 1,
+              visibility: 'visible',
+              width: 150,
+              x: 0,
+              y: 0,
+              transformOrigin: '50% 50%',
+            },
+            to: {
+              id: 'LNBjhv8Hif',
+              duration: 0.3,
+              ease: 'none',
+              height: 220,
+              opacity: 1,
+              rotation: 0,
+              scaleX: 1,
+              scaleY: 1,
+              visibility: 'visible',
+              width: 150,
+              x: 0,
+              y: 0,
+              data: {
+                className: 'f3-right-container',
+                end: 9300,
+                elementName: 'F3 Right Container',
+                figmaElementId: '1:261',
+                start: 9000,
+              },
+              transformOrigin: '50% 50%',
+            },
+          },
+          {
+            className: '.f3-bottom-container',
+            position: 9,
+            type: 'custom',
+            visibility: 'hidden',
+            from: {
+              id: '4PD4vVVYXi',
+              duration: 0,
+              ease: 'none',
+              height: 30,
+              opacity: 0,
+              rotation: 0,
+              scaleX: 1,
+              scaleY: 1,
+              visibility: 'visible',
+              width: 300,
+              x: 0,
+              y: 0,
+              transformOrigin: '50% 50%',
+            },
+            to: {
+              id: '4PD4vVVYXi',
+              duration: 0.3,
+              ease: 'none',
+              height: 30,
+              opacity: 1,
+              rotation: 0,
+              scaleX: 1,
+              scaleY: 1,
+              visibility: 'visible',
+              width: 300,
+              x: 0,
+              y: 0,
+              data: {
+                className: 'f3-bottom-container',
+                end: 9300,
+                elementName: 'F3 Bottom Container',
+                figmaElementId: '1:90',
+                start: 9000,
+              },
+              transformOrigin: '50% 50%',
+            },
+          },
+        ];
+        const eventAnimations = [
+          {
+            className: '.f1-right-container',
+            position: 0,
+            eventId: '01J5821W65XHF1HYT82S41JB4C',
+            type: 'custom',
+            visibility: 'visible',
+            from: {
+              ease: 'power3',
+              height: 167,
+              id: 'F1 Right Container-01J58226GEHFMFKYPTFD28VCES',
+              opacity: 1,
+              rotation: 0,
+              scaleX: 1,
+              scaleY: 1,
+              transformOrigin: '50% 50%',
+              visibility: 'visible',
+              width: 161,
+              x: 0,
+              y: 0,
+            },
+            to: {
+              data: {
+                className: 'f1-right-container',
+                end: 150,
+                elementName: 'F1 Right Container',
+                figmaElementId: '1:253',
+                start: 0,
+              },
+              duration: 0.15,
+              ease: 'power3',
+              height: 167,
+              id: 'F1 Right Container-01J58226GEHFMFKYPTFD28VCES',
+              opacity: 1,
+              rotation: 0,
+              scaleX: 1,
+              scaleY: 1,
+              transformOrigin: '50% 50%',
+              visibility: 'visible',
+              width: 161,
+              x: 0,
+              y: 0,
+            },
+          },
+          {
+            className: '.f1-right-container',
+            position: 0,
+            eventId: '01J5821W65XHF1HYT82S41JB4C',
+            type: 'custom',
+            visibility: 'visible',
+            from: {
+              ease: 'power3',
+              height: 167,
+              id: 'F1 Right Container-01J5826W8H75SX2F35ED3HNGWQ',
+              opacity: 1,
+              rotation: 0,
+              scaleX: 1,
+              scaleY: 1,
+              transformOrigin: '50% 50%',
+              visibility: 'visible',
+              width: 161,
+              x: 0,
+              y: 0,
+            },
+            to: {
+              data: {
+                className: 'f1-right-container',
+                end: 300,
+                elementName: 'F1 Right Container',
+                figmaElementId: '1:253',
+                start: 0,
+              },
+              duration: 0.3,
+              ease: 'power3',
+              height: 167,
+              id: 'F1 Right Container-01J5826W8H75SX2F35ED3HNGWQ',
+              opacity: 1,
+              rotation: 0,
+              scaleX: 1,
+              scaleY: 1,
+              transformOrigin: '50% 50%',
+              visibility: 'visible',
+              width: 161,
+              x: 0,
+              y: 0,
+            },
+          },
+        ];
+        const events = [
+          {
+            projectId: '01J2Y43HCZEYYC3D1JP3MS59D4',
+            id: '01J5821W65XHF1HYT82S41JB4C',
+            updatedAt: '2024-08-14T09:03:41.779Z',
+            eventType: 'click',
+            trackId: '01J2Y449PZP07VZNY3TWM5XG8S',
+            name: 'New Event 207328',
+            createdAt: '2024-08-14T09:03:41.779Z',
+            figmaElementId: '1:153',
+            start: 0,
+            entity: 'Event',
+            className: '.heading-f1-wrapper',
+          },
+        ];
+
+        // Add animations
+        creative.addTimelineAnimations(timelineAnimations);
+        creative.addEventAnimations(eventAnimations, events);
+
+        // Add standard click handler
+        creative.addStandardClickHandler();
+
+        // Show the ad and start animation
+        creative.startAnimation();
+      });
+    </script>
+  </div>
+</body>
