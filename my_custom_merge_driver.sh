@@ -33,6 +33,7 @@ while read -r line; do
 
   # Extract the blame information for this line
   OURS_AUTHOR=$(grep "$line" $OURS_BLAME | awk '{print $2}')
+  echo OURS_AUTHOR
   THEIRS_AUTHOR=$(grep "$line" $THEIRS_BLAME | awk '{print $2}')
 
   # If the line is changed by userA only, we keep the current (ours) version
