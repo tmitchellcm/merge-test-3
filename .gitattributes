@@ -1,6 +1,3 @@
-<<<<<<< HEAD
 #.gitattributes
-=======
->>>>>>> master
 # Define custom merge behavior for template.html
 template.html merge=my_custom_merge_driver
