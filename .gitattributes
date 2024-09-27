@@ -1,1 +1,2 @@
-template.html merge=my_custom_driver
+# Define custom merge behavior for template.html
+template.html merge=my_custom_merge_driver
