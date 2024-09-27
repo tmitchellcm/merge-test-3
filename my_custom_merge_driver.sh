@@ -36,9 +36,9 @@ while read -r line; do
   THEIRS_AUTHOR=$(grep "$line" $THEIRS_BLAME | awk '{print $2}')
 
   # If the line is changed by userA only, we keep the current (ours) version
-  if [[ "$OURS_AUTHOR" == "userA" && "$THEIRS_AUTHOR" == "userA" ]]; then
+  if [[ "$OURS_AUTHOR" == "Tom Mitchell" && "$THEIRS_AUTHOR" == "Tom Mitchell" ]]; then
     continue
-  elif [[ "$OURS_AUTHOR" == "userA" || "$OURS_AUTHOR" == "userB" ]]; then
+  elif [[ "$OURS_AUTHOR" == "Tom Mitchell" || "$OURS_AUTHOR" == "userB" ]]; then
     # If userA or userB (or both) changed the line, don't auto merge
     AUTO_MERGE=false
     break
